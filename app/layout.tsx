@@ -14,7 +14,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "AI in Scientific Research Course",
-  description: "AI in Scientific Research training course by Dr. Ra'fat Jallad",
+  description: "Training course by Dr. Ra'fat Jallad",
 };
 
 export default function RootLayout({
@@ -24,9 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <body className="font-sans text-slate-800 antialiased">
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
